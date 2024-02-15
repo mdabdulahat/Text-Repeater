@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/pagebkg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="TEXT REPEATER"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="20dp"
+                    android:alpha="0.5"
+                    android:background="#9E70EF"/>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/round_back_dark_blue5"
+                    android:id="@+id/text"
+                    android:inputType="text"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:hint="Enter Text"
+                    />
+
+                <EditText
+                    android:id="@+id/Inttext"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_back_dark_blue5"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="20dp"
+                    android:paddingStart="5dp"
+                    android:textStyle="bold"
+                    android:hint="Enter Number"
+                    android:inputType="phone"
+                    />
+
+                <Button
+                    android:id="@+id/b_go"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Show Display"
+                    />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:id="@+id/et_output"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:background="@drawable/round_back_dark_blue5"
+                    android:layout_alignParentStart="true"
+                    android:ems="10"
+                    android:hint="Display"
+                    android:gravity="start"
+                    android:inputType="textMultiLine"
+                    />
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Share" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>
